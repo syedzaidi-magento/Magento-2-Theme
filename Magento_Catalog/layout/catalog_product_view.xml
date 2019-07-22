@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Magento\Cms\Block\Block" name="my_sale_price" before="product.info.price">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">my_sale_price</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="product.info.review" remove="true"/>
+
+        <!--<referenceContainer name="product.info.form.content">-->
+            <!--<block class="Magento\Cms\Block\Block" name="my_sale_price" before="-">-->
+                <!--<arguments>-->
+                    <!--<argument name="block_id" xsi:type="string">my_sale_price</argument>-->
+                <!--</arguments>-->
+            <!--</block>-->
+        <!--</referenceContainer>-->
+    </body>
+</page>

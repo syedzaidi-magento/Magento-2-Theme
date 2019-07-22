@@ -1,0 +1,24 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.panel.wrapper" remove="true"/>
+        <move element="navigation.sections" destination="header-wrapper" after="logo"/>
+        <referenceBlock name="header.links" remove="true" />
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string" >image/logo_no_bg.png</argument>
+                <argument name="logo_alt" xsi:type="string">SocalPatio Logo</argument>
+                <argument name="logo_img_width" xsi:type="number">300</argument>
+                <argument name="logo_img_height" xsi:type="number">43</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="footer">
+            <referenceBlock name="footer_links" remove="true" />
+            <referenceBlock name="form.subscribe" remove="true" />
+            <block class="Magento\Cms\Block\Block" name="footer_block">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_block</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
