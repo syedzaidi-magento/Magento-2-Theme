@@ -4,7 +4,7 @@
  
    \Magento\Framework\Component\ComponentRegistrar::THEME,
  
-   'frontend/Heritage/socalpatio_child',
+   'frontend/Vendor/socalpatio_child',
  
    __DIR__
  
